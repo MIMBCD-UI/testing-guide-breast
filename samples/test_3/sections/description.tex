@@ -1,39 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                 %
+%                     SECTION                     %
+%                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Description}
 
-blabalaba
+To verify our work, we identified measurable and explicit targets. By having several goals, including that a value percentage of the users should be able to operate the tasks without the need of help. On the same rate value, the user should be able to start and complete the medical diagnosis tasks over the system with little errors or mitigating those errors. Measuring the expected number of errors with a relation between our laboratory pilot tests. On the laboratory pilot tests we aim to test our prototypes with Researchers. The Researchers are in the context of the system and know well the functionalities so that we need to expect a percentage value over their results compared to Clinicians and not the same benefits. Last but now least, both users (Researchers and Clinicians) should be able to understand in a similar time amount the meaning of all visible controls. By the similar amount of time, it is expected to have a variance of the percentage value between Researchers and Clinicians of the same value percentage of the early goals described in this paragraph.
 
-\subsection{Traditional Devices}
+We tested each objective in early laboratory and field tests so that we could take the appropriate corrective actions. Also, we expect to run early field tests with Researchers and Clinicians to highlight issues that we overlooked and ignored during the prototyping phase. To support interaction use by the Clinicians, we will try to emphasise several key factors on our user tests. The tasks must be simple, low intrusive, support for natural interaction and the system must always give visibility and the task current-state.
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                 %
+%                     SECTION                     %
+%                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Devices}
 
 Traditional interaction remains the most common way to interact with user interfaces in a clinical environment. Unfortunately, most of this interaction is made by low profile equipment that makes users produce more errors and take more time interacting with those user interfaces.
 
+On Figure \ref{fig:patient_list} the user can select the list of patients. The list has a table with several patient information. The first column is the \textit{Patient ID}; we used it as an identifier of the patient. That way we can have anonymised information with no reference to the patient name. The second column is the \textit{Study Date}, the third column is the \textit{Modality} of the used \textbf{DICOM} image, the fourth column is the \textit{Study Description} of the used study and the last column is the number of \textit{Images}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-TODO...
+\hfill
 
-As we can see in Figure 1, it describes our User Interface (UI), where the patient ("Anonymized1" for example) breast are on a small left column. The options are in a short row near of the viewport and described below. We also have the tabs where the user can change the patient. The centre viewport shows the DICOM Image, and it can be configured to display a number up to four DICOM images. The viewport has some text information on it (yellow) with the details of the metadata.
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{patient_list}
+\caption{List of patients.}
+\label{fig:patient_list}
+\end{figure}
 
-Manual annotation is adopted by us thanks to the CornerstoneJS Freehand ROI and Probe annotation features. According to the Cornerstone Library, the user can create an annotation by setting up consecutive landmarks around a Region of Interest (ROI). The markers finish a lesion annotation when it interconnects the historical. Additional features available in our User Interface (UI) includes on-demand increment of the number of landmarks, and throw transformations of the shape of an annotation.
+\hfill
 
-\subsection{Interactive Buttons}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\begin{figure}[h]
-%\caption{All interactive buttons.}
-%\centering
-%\includegraphics[width=\textwidth]{}
-%\end{figure}
+As we can see in Figure \ref{fig:image_viewer}, it shows the first task in our User Interface (UI), where the patien's breasts are on a small left column. The options are in a short row near of the viewport and described below. We also have the tabs where the user can change the patient. The centre viewport shows the \textbf{DICOM} image, and it can be configured to display a number up to four \textbf{DICOM} images. The viewport has some text information on it (yellow) with the details of the metadata.
 
-The systems have several buttons (Figure 2) that allows the user to interact or access to a set of user interface features. The buttons are (from left to right):
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hfill
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{image_viewer}
+\caption{Viewer of the \textbf{DICOM} images.}
+\label{fig:image_viewer}
+\end{figure}
+
+\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Manual annotation is adopted by us thanks to Freehand ROI and Probe annotation features, both from CornerstoneJS. According to the CornerstoneJS Library, the user can create an annotation by setting up consecutive landmarks around a Region of Interest (ROI). The markers finish a lesion annotation when it interconnects the historical. Additional features available in our User Interface (UI) includes on-demand increment of the number of landmarks, and throw transformations of the shape of an annotation.
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                 %
+%                     SECTION                     %
+%                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{User Interactions}
+
+The systems have several buttons (Figure \ref{fig:toolbar}) that allows the user to interact or access to a set of user interface features. Each item of the following list represents each metaphoric icon of Figure \ref{fig:toolbar}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hfill
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{toolbar}
+\caption{Toolbar of the System available features.}
+\label{fig:toolbar}
+\end{figure}
+
+\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hfill
+
+The buttons are (from left to right of Figure \ref{fig:toolbar}) as follows:
+
+\hfill
 
 \begin{itemize}
-  \item WW/WC
-  \item Invert
-  \item Zoom
-  \item Pan
-  \item Stack Scroll
-  \item Length Measurement
-  \item Window Controller
-  \item Freehand
+\item WW/WC
+\item Invert
+\item Zoom
+\item Pan
+\item Stack Scroll
+\item Freehand
+\item Probe (Deactivated)
+\item Save
+\item Window Controller
 \end{itemize}
+
+\hfill
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                 %
+%                     SECTION                     %
+%                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Usability Evaluation Technique}
 
