@@ -1,6 +1,6 @@
 \section{System}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The hereby prototype used is the \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/releases/tag/v1.0.6-alpha}{v1.0.6-alpha} version of our \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/}{prototype-breast-screening}. The purpose of this prototype is to integrate a web-based tool by using medical imaging for the breast screening diagnosis. This web-based tool was created with a front-end and bak-end architecture utilising common programming languages, libraries, frameworks and tools including \hyperlink{https://www.javascript.com/}{JavaScript (JS)}~\cite{flanagan2006javascript}, \hyperlink{https://nodejs.org/}{NodeJS}~\cite{wilson2018node}, \hyperlink{https://hammerjs.github.io/}{HammerJS}, \hyperlink{https://cornerstonejs.org/}{CornerstoneJS}~\cite{hostetter2018integration} and \hyperlink{https://www.orthanc-server.com/}{Orthanc}~\cite{Jodogne:ISBI2013}. The central component of this prototype is a web-based \hyperlink{https://www.sciencedirect.com/topics/medicine-and-dentistry/picture-archiving-and-communication-system}{PACS}~\cite{cooke2003picture} pairwise with ubicous web technologies and based on the \textbf{Open Source (OS)}~\cite{feller2002understanding} \hyperlink{https://cornerstonejs.org/}{CornerstoneJS}~\cite{hostetter2018integration} library.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                 %
@@ -10,23 +10,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 \subsection{Environments}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This section describes the user environment over interaction, the so called \textbf{Radiology Room (RR)} (Figure \ref{fig:radioroom}). This guide is based on soft-copy diagnosis using computer workstations in their current reading room environment. It will be here where we take impressions regarding the efficacy of radiologist's reading room design, and their recommendations based on their experience for improvements on the soft-copy reading environment. Several studies demonstrated that radiologist fatigue levels and performance are related to environmental factors such as monitor brightness and ambient room light in addition to workstation enhancements. Supported by this guide, our research aims to conduct an investigation for the several environmental variables. We expect to analyse the noise, temperature, seating ergonomics and so on.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \hfill
 
-%\begin{figure}[h]
-%\caption{Image Sample}
-%\centering
-%\includegraphics[width=\textwidth]{image}
-%\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{acr}
+\caption{Radiology Room}
+\label{fig:radioroom}
+\end{figure}
 
 \hfill
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Nisi ut aliquid ex ea commodi consequatur? Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                 %
@@ -34,44 +33,41 @@ Nisi ut aliquid ex ea commodi consequatur? Vel illum qui dolorem eum fugiat quo 
 %                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Interaction}
+\subsection{Case Studies}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The functionality of the prototype will be best demonstrated by a series of case studies. By describing the expected workflow and capabilities of the research study at the \textbf{RR} specific environment and changes of the workflow by using our system prototype. The study implies the the evaluation of medical imaging features of several breast lesions. The primary goal of this case studies analysis is to generate a receiver operating characteristic to evaluate the performance and validation of our system. Let us consider a list of hypothetical use cases for the research investigation that evaluates the interaction and usability performance of the prototype. Therefore, the following list will show the preliminary case studies.
 
 \hfill
 
-%\begin{figure}[h]
-%\caption{Banner Sample}
-%\centering
-%\includegraphics[width=\textwidth]{banner}
-%\end{figure}
-
-\hfill
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\hfill
-
-List of something with no enumeration:
+List of case studies to analyse our solution prototype:
 
 \hfill
 
 \begin{itemize}
-  \item Something 1
-  \item Something 2
-  \item Something 3
-  \item Something 4
-  \item Something 5
-  \item Something 6
-  \item Something 7
-  \item Something 8
-  \item Something 9
+  \item Multi-modality Imaging Features of a Breast Cancer Diagnosis;
+  \item Radiologist Learning Curve Assessment;
+  \item Remote Access;
+  \item Intuitive Controls Analysis;
+  \item Performance Measurement Values Acquisition;
+  \item Usability Measurement Values Acquisition;
+  \item Radiologist Validation;
 \end{itemize}
 
 \hfill
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+We expect to demonstrate several uses through a series of case studies, including implementation of our research prototype for a multi-modality view studies and other imaging research, and creation of a novel tool for the purpose. By creating a set of questions, we will try to achieve and feed this case studies. It is automatically associated with all cases. The Radiologist may interact with our system manipulating the medical imaging and report to us difficulties and improvements. The number of questions is not restricted to the present document, since the interview will be open and suggestive. There is no limit to the number of questions that can be asked per case.
+
+The data will be collect from the study video and observations into a spreadsheet for further analysis. We will report the results of this tests and conclusions. This guide and respective use cases will be iteratively improved.
+
+
+
+
+
+
+
+
+
+
+
