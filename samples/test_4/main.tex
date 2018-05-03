@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=black,
+}
+
+\title{
+MIMBCD-UI
+\\
+User Testing Guide
+}
+
+\author{
+  Francisco Maria Calisto\\
+  \texttt{francisco.calisto@tecnico.ulisboa.pt}
+}
+
+\date{03/05/2018}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Prototype:} \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-cancer}{prototype-breast-cancer} \hfill \textbf{Version:} \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/tree/b02f15495b6cdd0700696ec918d6f329278670d0}{v1.2.0-beta}
+
+\textbf{Milestone:} \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/milestone/1}{1.2.0-beta} \hfill \textbf{Release:} \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/releases/tag/v1.2.0-beta}{v1.2.0-beta}
+
+\hfill
+
+\textbf{DICOM:} \hyperlink{https://github.com/MIMBCD-UI/dicom-server}{dicom-server}
+
+\textbf{Commit:} \hyperlink{https://github.com/MIMBCD-UI/dicom-server/tree/33f4f92f7b016e69e63f13592eb47fa18a4dc8c3}{33f4f92f7b016e69e63f13592eb47fa18a4dc8c3}
+
+\hfill
+
+\textbf{Deployment Environment:} Prod. \hfill \textbf{Deployment Server:} Prod.
+
+\textbf{Link:} \hyperlink{http://www.breastscreening.io/dashboard/}{breastscreening.io/dashboard}
+
+\hfill
+
+\textbf{Main Server:} \hyperlink{http://breastscreening.isr.tecnico.ulisboa.pt:8088/src/public/index.html}{Production} \hfill \textbf{Port:} 8088
+
+\textbf{Private IP:} \hyperlink{http://10.0.1.23:8088/src/public/index.html}{10.0.1.23} \hfill \textbf{Public IP:} \hyperlink{http://193.136.138.62:8088/src/public/index.html}{193.136.138.62}
+
+\textbf{Private Domain:} \hyperlink{http://cromo.isrnet:8088/src/public/index.html}{cromo.isrnet}
+
+\hfill
+
+\textbf{DICOM Server:} \hyperlink{http://breastscreening.isr.tecnico.ulisboa.pt:8042/app/explorer.html}{Test} \hfill \textbf{Port:} 8042
+
+\textbf{Private IP:} \hyperlink{http://10.0.1.23:8042/app/explorer.html}{10.0.1.23} \hfill \textbf{Public IP:} \hyperlink{http://193.136.138.62:8042/app/explorer.html}{193.136.138.62}
+
+\textbf{Private Domain:} \hyperlink{http://cromo.isrnet:8042/app/explorer.html}{cromo.isrnet} \hfill \textbf{From:} 8142
+
+\clearpage
+
+\input{sections/introduction}
+\input{sections/material}
+\input{sections/description}
+\input{sections/methodology}
+\input{sections/procedures}
+\input{sections/tasks}
+\input{sections/measurements}
+\input{sections/goals}
+\input{sections/results}
+
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references.bib}
+
+\end{document}
