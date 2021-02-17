@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym,nomain,nonumberlist]{glossaries}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\makeglossaries
+
+\newacronym{AI}{AI}{Artificial Intelligence}
+\newacronym{BIRADS}{BIRADS}{Breast Imaging Reporting and Data System}
+\newacronym{DICOM}{DICOM}{Digital Imaging and Communications in Medicine}
+\newacronym{DOTS}{DOTS}{Dimensions Of Trust Scale}
+\newacronym{MM}{MM}{Multi-Modality}
+\newacronym{SS}{SS}{Single-Modality}
+\newacronym{MG}{MG}{MammoGraphy}
+\newacronym{CC}{CC}{CranioCaudal}
+\newacronym{MLO}{MLO}{MedioLateral Oblique}
+\newacronym{US}{US}{UltraSound}
+\newacronym{MRI}{MRI}{Magnetic Resonance Imaging}
+\newacronym{MI}{MI}{Medical Imaging}
+\newacronym{MIDA}{MIDA}{Medical Imaging Diagnosis Assistant}
+\newacronym{MIMBCD-UI}{MIMBCD-UI}{MI Multimodality Breast Cancer Diagnosis UI}
+\newacronym{NASA-TLX}{NASA-TLX}{NASA Task Load Index}
+\newacronym{SUS}{SUS}{System Usability Scale}
+\newacronym{UI}{UI}{User Interface}
+\newacronym{Assis.}{Assis.}{Assistant}
+\newacronym{Work.}{Work.}{Workload}
+\newacronym{Usa.}{Usa.}{Usability}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    citecolor=black,
+}
+
+\title{
+MIDA
+\\
+User Testing Guide
+\\
+\textit{Multi-Modality} vs \textit{AI-Assisted}
+\\
+Assistant Introduction
+}
+
+\author{
+Francisco Maria Calisto\\
+\texttt{francisco.calisto@tecnico.ulisboa.pt}
+}
+
+\date{07/03/2019}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Prototype:} \hyperlink{https://github.com/MIMBCD-UI/prototype-multi-modality}{prototype-multi-modality} \hfill \textbf{Version:} \hyperlink{https://github.com/MIMBCD-UI/prototype-multi-modality/releases/tag/v1.0.1-alpha}{v1.0.1-alpha}
+
+\textbf{Milestone:} \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/milestone/1}{1.2.0-beta} \hfill \textbf{Release:} \hyperlink{https://github.com/MIMBCD-UI/prototype-breast-screening/releases/tag/v1.2.0-beta}{v1.2.0-beta}
+
+\hfill
+
+\textbf{Prototype:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant}{prototype-multi-modality-assistant} \hfill \textbf{Version:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant/releases/tag/v1.2.0-alpha}{v1.2.0-alpha}
+
+\textbf{Milestone:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant/milestone/2}{1.2.0-alpha} \hfill \textbf{Release:} \hyperlink{https://github.com/mida-project/prototype-multi-modality-assistant/releases/tag/v1.2.0-alpha}{v1.2.0-alpha}
+
+\hfill
+
+\textbf{DICOM:} \hyperlink{https://github.com/MIMBCD-UI/dicom-server}{dicom-server}
+
+\textbf{Commit:} \hyperlink{https://github.com/MIMBCD-UI/dicom-server/tree/80191e9941c24043c7f612b2dadcd415c060bf96}{80191e9941c24043c7f612b2dadcd415c060bf96}
+
+\hfill
+
+\textbf{Depl. Env.:} Localhost \hfill \textbf{Depl. Server:} Localhost
+
+\textbf{Link:} \hyperlink{http://www.breastscreening.io/dashboard/}{breastscreening.io/dashboard}
+
+\hfill
+
+\textbf{Main Server:} \hyperlink{http://localhost:8486/src/public/index.html}{Localhost} \hfill \textbf{Port:} 8486
+
+\textbf{Private IP:} \hyperlink{http://localhost:8486/src/public/index.html}{localhost} \hfill \textbf{Public IP:} \hyperlink{http://localhost:8486/src/public/index.html}{localhost}
+
+\textbf{Private Domain:} \hyperlink{http://localhost:8486/src/public/index.html}{localhost}
+
+\hfill
+
+\textbf{DICOM Server:} \hyperlink{http://localhost:8448/app/explorer.html}{Localhost} \hfill \textbf{Port:} 8448
+
+\textbf{Private IP:} \hyperlink{http://localhost:8448/app/explorer.html}{localhost} \hfill \textbf{Public IP:} \hyperlink{http://localhost:8448/app/explorer.html}{localhost}
+
+\textbf{Private Domain:} \hyperlink{http://localhost:8448/app/explorer.html}{localhost} \hfill \textbf{From:} 8448
+
+\clearpage
+
+\input{sections/sec001}
+\input{sections/sec002}
+\input{sections/sec003}
+\input{sections/sec004}
+\input{sections/sec005}
+\input{sections/sec006}
+\input{sections/sec007}
+\input{sections/sec008}
+\input{sections/sec009}
+\input{sections/sec010}
+\input{sections/sec011}
+\input{sections/sec012}
+
+\clearpage
+
+\glsaddall
+\printglossary[type=\acronymtype,title=Acronyms]
+
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references.bib}
+
+\end{document}
