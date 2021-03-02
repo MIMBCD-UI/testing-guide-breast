@@ -1,0 +1,113 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[acronym,nomain,nonumberlist]{glossaries}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\makeglossaries
+
+\newacronym{AI}{AI}{Artificial Intelligence}
+\newacronym{Assis.}{Assis.}{Assistant}
+\newacronym{BIRADS}{BIRADS}{Breast Imaging Reporting and Data System}
+\newacronym{CC}{CC}{CranioCaudal}
+\newacronym{DICOM}{DICOM}{Digital Imaging and Communications in Medicine}
+\newacronym{DOTS}{DOTS}{Dimensions Of Trust Scale}
+\newacronym{HAII}{HAII}{Human-AI Interaction}
+\newacronym{MG}{MG}{MammoGraphy}
+\newacronym{MIDA}{MIDA}{Medical Imaging Diagnosis Assistant}
+\newacronym{MIMBCD-UI}{MIMBCD-UI}{MI Multimodality Breast Cancer Diagnosis UI}
+\newacronym{MI}{MI}{Medical Imaging}
+\newacronym{MLO}{MLO}{MedioLateral Oblique}
+\newacronym{MM}{MM}{Multi-Modality}
+\newacronym{MRI}{MRI}{Magnetic Resonance Imaging}
+\newacronym{NASA-TLX}{NASA-TLX}{NASA Task Load Index}
+\newacronym{SS}{SS}{Single-Modality}
+\newacronym{SUS}{SUS}{System Usability Scale}
+\newacronym{UI}{UI}{User Interface}
+\newacronym{US}{US}{UltraSound}
+\newacronym{UTA}{UTA}{User Testing and Analysis}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=black,
+    citecolor=black,
+}
+
+\title{
+MIDA
+\\
+User Testing \& Analysis Guide
+\\
+Clinical Opinion About Intelligent Agents
+\\
+}
+
+\author{
+Francisco Maria Calisto\\
+\texttt{francisco.calisto@tecnico.ulisboa.pt}\\
+Instituto Superior T\'{e}cnico\\
+University of Lisbon\\
+Portugal
+}
+
+\date{21/11/2019}
+
+\begin{document}
+
+\maketitle
+
+\textbf{BreastScreening:} \hfill \hyperlink{https://breastscreening.github.io/}{breastscreening.github.io}
+
+\textbf{Meta:} \hfill \hyperlink{https://github.com/BreastScreening/meta}{github.com/BreastScreening/meta}
+
+\textbf{Datasets:} \hfill \hyperlink{https://github.com/BreastScreening/meta/wiki/Datasets}{github.com/BreastScreening/meta/wiki/Datasets}
+
+\hfill
+
+\textbf{MIDA:} \hfill \hyperlink{https://mida-project.github.io/}{mida-project.github.io}
+
+\textbf{Meta:} \hfill \hyperlink{https://github.com/mida-project/meta}{github.com/mida-project/meta}
+
+\textbf{Datasets:} \hfill \hyperlink{https://github.com/mida-project/meta/wiki/Datasets}{github.com/mida-project/meta/wiki/Datasets}
+
+\hfill
+
+\textbf{MIMBCD-UI:} \hfill \hyperlink{https://mimbcd-ui.github.io/}{mimbcd-ui.github.io}
+
+\textbf{Meta:} \hfill \hyperlink{https://github.com/MIMBCD-UI/meta}{github.com/MIMBCD-UI/meta}
+
+\textbf{Datasets:} \hfill \hyperlink{https://github.com/MIMBCD-UI/meta/wiki/Datasets}{github.com/MIMBCD-UI/meta/wiki/Datasets}
+
+\clearpage
+
+\input{sections/sec001}
+\input{sections/sec002}
+\input{sections/sec003}
+\input{sections/sec004}
+\input{sections/sec005}
+\input{sections/sec006}
+\input{sections/sec007}
+\input{sections/sec008}
+\input{sections/sec009}
+\input{sections/sec010}
+\input{sections/sec011}
+\input{sections/sec012}
+
+\clearpage
+
+\glsaddall
+\printglossary[type=\acronymtype,title=Acronyms]
+
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{bibliography/references.bib}
+
+\end{document}
